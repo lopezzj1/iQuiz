@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.estimatedRowHeight = 44.0
+        self.tableView.estimatedRowHeight = 50
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -54,14 +54,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func settingsAlert(sender: AnyObject) {
         
-        let alertController = UIAlertController(title: "Settings", message:
-            "Settings Go Here!", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "Settings", message: "Settings Go Here!", preferredStyle: UIAlertControllerStyle.Alert)
         
-        alertController.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.Cancel,handler: nil))
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
 
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath)
+        -> CGFloat {
+            //return indexPath.row == 0 ? 120 : 70
+            return 70
+    }
+    
  
 }
 
