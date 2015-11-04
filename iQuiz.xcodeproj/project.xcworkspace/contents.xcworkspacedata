@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Table Example.xcodeproj">
+      location = "self:/Users/jlopez/Desktop/iQuiz/iQuiz.xcodeproj">
    </FileRef>
 </Workspace>

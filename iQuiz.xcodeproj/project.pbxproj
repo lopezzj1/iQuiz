@@ -14,6 +14,9 @@
 		A557049B1BE74C5900B4731D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55704991BE74C5900B4731D /* LaunchScreen.storyboard */; };
 		A55704A61BE74C5900B4731D /* Table_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55704A51BE74C5900B4731D /* Table_ExampleTests.swift */; };
 		A55704B11BE74C5900B4731D /* Table_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55704B01BE74C5900B4731D /* Table_ExampleUITests.swift */; };
+		A55704FD1BE764A100B4731D /* calc.png in Resources */ = {isa = PBXBuildFile; fileRef = A55704FC1BE764A100B4731D /* calc.png */; };
+		A55704FF1BE7650300B4731D /* superhero.png in Resources */ = {isa = PBXBuildFile; fileRef = A55704FE1BE7650300B4731D /* superhero.png */; };
+		A55705011BE7655100B4731D /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = A55705001BE7655100B4731D /* science.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +37,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A557048D1BE74C5900B4731D /* Table Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A557048D1BE74C5900B4731D /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55704901BE74C5900B4731D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55704921BE74C5900B4731D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A55704951BE74C5900B4731D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A55704971BE74C5900B4731D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A557049A1BE74C5900B4731D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A557049C1BE74C5900B4731D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A55704A11BE74C5900B4731D /* Table ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55704A11BE74C5900B4731D /* iQuiz.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuiz.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55704A51BE74C5900B4731D /* Table_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_ExampleTests.swift; sourceTree = "<group>"; };
 		A55704A71BE74C5900B4731D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A55704AC1BE74C5900B4731D /* Table ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55704AC1BE74C5900B4731D /* iQuiz.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuiz.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55704B01BE74C5900B4731D /* Table_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_ExampleUITests.swift; sourceTree = "<group>"; };
 		A55704B21BE74C5900B4731D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55704FC1BE764A100B4731D /* calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calc.png; sourceTree = "<group>"; };
+		A55704FE1BE7650300B4731D /* superhero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superhero.png; sourceTree = "<group>"; };
+		A55705001BE7655100B4731D /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = science.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,7 @@
 		A55704841BE74C5900B4731D = {
 			isa = PBXGroup;
 			children = (
-				A557048F1BE74C5900B4731D /* Table Example */,
+				A557048F1BE74C5900B4731D /* iQuiz */,
 				A55704A41BE74C5900B4731D /* Table ExampleTests */,
 				A55704AF1BE74C5900B4731D /* Table ExampleUITests */,
 				A557048E1BE74C5900B4731D /* Products */,
@@ -87,14 +93,14 @@
 		A557048E1BE74C5900B4731D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A557048D1BE74C5900B4731D /* Table Example.app */,
-				A55704A11BE74C5900B4731D /* Table ExampleTests.xctest */,
-				A55704AC1BE74C5900B4731D /* Table ExampleUITests.xctest */,
+				A557048D1BE74C5900B4731D /* iQuiz.app */,
+				A55704A11BE74C5900B4731D /* iQuiz.xctest */,
+				A55704AC1BE74C5900B4731D /* iQuiz.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A557048F1BE74C5900B4731D /* Table Example */ = {
+		A557048F1BE74C5900B4731D /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
 				A55704901BE74C5900B4731D /* AppDelegate.swift */,
@@ -102,8 +108,12 @@
 				A55704941BE74C5900B4731D /* Main.storyboard */,
 				A55704971BE74C5900B4731D /* Assets.xcassets */,
 				A55704991BE74C5900B4731D /* LaunchScreen.storyboard */,
+				A55705001BE7655100B4731D /* science.png */,
+				A55704FE1BE7650300B4731D /* superhero.png */,
+				A55704FC1BE764A100B4731D /* calc.png */,
 				A557049C1BE74C5900B4731D /* Info.plist */,
 			);
+			name = iQuiz;
 			path = "Table Example";
 			sourceTree = "<group>";
 		};
@@ -128,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A557048C1BE74C5900B4731D /* Table Example */ = {
+		A557048C1BE74C5900B4731D /* iQuiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A55704B51BE74C5900B4731D /* Build configuration list for PBXNativeTarget "Table Example" */;
+			buildConfigurationList = A55704B51BE74C5900B4731D /* Build configuration list for PBXNativeTarget "iQuiz" */;
 			buildPhases = (
 				A55704891BE74C5900B4731D /* Sources */,
 				A557048A1BE74C5900B4731D /* Frameworks */,
@@ -140,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = "Table Example";
+			name = iQuiz;
 			productName = "Table Example";
-			productReference = A557048D1BE74C5900B4731D /* Table Example.app */;
+			productReference = A557048D1BE74C5900B4731D /* iQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A55704A01BE74C5900B4731D /* Table ExampleTests */ = {
+		A55704A01BE74C5900B4731D /* iQuizTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A55704B81BE74C5900B4731D /* Build configuration list for PBXNativeTarget "Table ExampleTests" */;
+			buildConfigurationList = A55704B81BE74C5900B4731D /* Build configuration list for PBXNativeTarget "iQuizTests" */;
 			buildPhases = (
 				A557049D1BE74C5900B4731D /* Sources */,
 				A557049E1BE74C5900B4731D /* Frameworks */,
@@ -158,14 +168,14 @@
 			dependencies = (
 				A55704A31BE74C5900B4731D /* PBXTargetDependency */,
 			);
-			name = "Table ExampleTests";
+			name = iQuizTests;
 			productName = "Table ExampleTests";
-			productReference = A55704A11BE74C5900B4731D /* Table ExampleTests.xctest */;
+			productReference = A55704A11BE74C5900B4731D /* iQuiz.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A55704AB1BE74C5900B4731D /* Table ExampleUITests */ = {
+		A55704AB1BE74C5900B4731D /* iQuizUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A55704BB1BE74C5900B4731D /* Build configuration list for PBXNativeTarget "Table ExampleUITests" */;
+			buildConfigurationList = A55704BB1BE74C5900B4731D /* Build configuration list for PBXNativeTarget "iQuizUITests" */;
 			buildPhases = (
 				A55704A81BE74C5900B4731D /* Sources */,
 				A55704A91BE74C5900B4731D /* Frameworks */,
@@ -176,9 +186,9 @@
 			dependencies = (
 				A55704AE1BE74C5900B4731D /* PBXTargetDependency */,
 			);
-			name = "Table ExampleUITests";
+			name = iQuizUITests;
 			productName = "Table ExampleUITests";
-			productReference = A55704AC1BE74C5900B4731D /* Table ExampleUITests.xctest */;
+			productReference = A55704AC1BE74C5900B4731D /* iQuiz.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A55704881BE74C5900B4731D /* Build configuration list for PBXProject "Table Example" */;
+			buildConfigurationList = A55704881BE74C5900B4731D /* Build configuration list for PBXProject "iQuiz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +230,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A557048C1BE74C5900B4731D /* Table Example */,
-				A55704A01BE74C5900B4731D /* Table ExampleTests */,
-				A55704AB1BE74C5900B4731D /* Table ExampleUITests */,
+				A557048C1BE74C5900B4731D /* iQuiz */,
+				A55704A01BE74C5900B4731D /* iQuizTests */,
+				A55704AB1BE74C5900B4731D /* iQuizUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A557049B1BE74C5900B4731D /* LaunchScreen.storyboard in Resources */,
+				A55704FD1BE764A100B4731D /* calc.png in Resources */,
+				A55704FF1BE7650300B4731D /* superhero.png in Resources */,
+				A55705011BE7655100B4731D /* science.png in Resources */,
 				A55704981BE74C5900B4731D /* Assets.xcassets in Resources */,
 				A55704961BE74C5900B4731D /* Main.storyboard in Resources */,
 			);
@@ -285,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		A55704A31BE74C5900B4731D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A557048C1BE74C5900B4731D /* Table Example */;
+			target = A557048C1BE74C5900B4731D /* iQuiz */;
 			targetProxy = A55704A21BE74C5900B4731D /* PBXContainerItemProxy */;
 		};
 		A55704AE1BE74C5900B4731D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A557048C1BE74C5900B4731D /* Table Example */;
+			target = A557048C1BE74C5900B4731D /* iQuiz */;
 			targetProxy = A55704AD1BE74C5900B4731D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -403,7 +416,7 @@
 				INFOPLIST_FILE = "Table Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.lopezzj1.Table-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iQuiz;
 			};
 			name = Debug;
 		};
@@ -414,7 +427,7 @@
 				INFOPLIST_FILE = "Table Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.lopezzj1.Table-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iQuiz;
 			};
 			name = Release;
 		};
@@ -425,8 +438,8 @@
 				INFOPLIST_FILE = "Table ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.lopezzj1.Table-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Table Example.app/Table Example";
+				PRODUCT_NAME = iQuiz;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iQuiz.app/iQuiz";
 			};
 			name = Debug;
 		};
@@ -437,8 +450,8 @@
 				INFOPLIST_FILE = "Table ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.lopezzj1.Table-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Table Example.app/Table Example";
+				PRODUCT_NAME = iQuiz;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iQuiz.app/iQuiz";
 			};
 			name = Release;
 		};
@@ -448,7 +461,7 @@
 				INFOPLIST_FILE = "Table ExampleUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.lopezzj1.Table-ExampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iQuiz;
 				TEST_TARGET_NAME = "Table Example";
 				USES_XCTRUNNER = YES;
 			};
@@ -460,7 +473,7 @@
 				INFOPLIST_FILE = "Table ExampleUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.lopezzj1.Table-ExampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iQuiz;
 				TEST_TARGET_NAME = "Table Example";
 				USES_XCTRUNNER = YES;
 			};
@@ -469,7 +482,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A55704881BE74C5900B4731D /* Build configuration list for PBXProject "Table Example" */ = {
+		A55704881BE74C5900B4731D /* Build configuration list for PBXProject "iQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55704B31BE74C5900B4731D /* Debug */,
@@ -478,29 +491,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A55704B51BE74C5900B4731D /* Build configuration list for PBXNativeTarget "Table Example" */ = {
+		A55704B51BE74C5900B4731D /* Build configuration list for PBXNativeTarget "iQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55704B61BE74C5900B4731D /* Debug */,
 				A55704B71BE74C5900B4731D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A55704B81BE74C5900B4731D /* Build configuration list for PBXNativeTarget "Table ExampleTests" */ = {
+		A55704B81BE74C5900B4731D /* Build configuration list for PBXNativeTarget "iQuizTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55704B91BE74C5900B4731D /* Debug */,
 				A55704BA1BE74C5900B4731D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A55704BB1BE74C5900B4731D /* Build configuration list for PBXNativeTarget "Table ExampleUITests" */ = {
+		A55704BB1BE74C5900B4731D /* Build configuration list for PBXNativeTarget "iQuizUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55704BC1BE74C5900B4731D /* Debug */,
 				A55704BD1BE74C5900B4731D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

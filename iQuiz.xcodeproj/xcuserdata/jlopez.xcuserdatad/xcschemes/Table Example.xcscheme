@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A557048C1BE74C5900B4731D"
-               BuildableName = "Table Example.app"
-               BlueprintName = "Table Example"
-               ReferencedContainer = "container:Table Example.xcodeproj">
+               BuildableName = "iQuiz.app"
+               BlueprintName = "iQuiz"
+               ReferencedContainer = "container:iQuiz.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A55704A01BE74C5900B4731D"
-               BuildableName = "Table ExampleTests.xctest"
-               BlueprintName = "Table ExampleTests"
-               ReferencedContainer = "container:Table Example.xcodeproj">
+               BuildableName = "iQuiz.xctest"
+               BlueprintName = "iQuizTests"
+               ReferencedContainer = "container:iQuiz.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A55704AB1BE74C5900B4731D"
-               BuildableName = "Table ExampleUITests.xctest"
-               BlueprintName = "Table ExampleUITests"
-               ReferencedContainer = "container:Table Example.xcodeproj">
+               BuildableName = "iQuiz.xctest"
+               BlueprintName = "iQuizUITests"
+               ReferencedContainer = "container:iQuiz.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A557048C1BE74C5900B4731D"
-            BuildableName = "Table Example.app"
-            BlueprintName = "Table Example"
-            ReferencedContainer = "container:Table Example.xcodeproj">
+            BuildableName = "iQuiz.app"
+            BlueprintName = "iQuiz"
+            ReferencedContainer = "container:iQuiz.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A557048C1BE74C5900B4731D"
-            BuildableName = "Table Example.app"
-            BlueprintName = "Table Example"
-            ReferencedContainer = "container:Table Example.xcodeproj">
+            BuildableName = "iQuiz.app"
+            BlueprintName = "iQuiz"
+            ReferencedContainer = "container:iQuiz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A557048C1BE74C5900B4731D"
-            BuildableName = "Table Example.app"
-            BlueprintName = "Table Example"
-            ReferencedContainer = "container:Table Example.xcodeproj">
+            BuildableName = "iQuiz.app"
+            BlueprintName = "iQuiz"
+            ReferencedContainer = "container:iQuiz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
