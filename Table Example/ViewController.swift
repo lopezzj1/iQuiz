@@ -105,25 +105,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //prepares for segue (Main)
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-       /* if selectedTitle == "Mathematics" {
-            if let gameController = segue.destinationViewController as? GameView {
-                gameController.selectedQuiz = "Mathematics"
-            }
-        }
-        
-        if selectedTitle == "Marvel Superheroes" {
-            if let gameController = segue.destinationViewController as? GameView {
-                gameController.selectedQuiz = "Marvel Superheroes"
-            }
-        }
-        
-        if selectedTitle == "Science" {
-            if let gameController = segue.destinationViewController as? GameView {
-                gameController.selectedQuiz = "Science"
-            }
-        }*/
-        
         if let gameController = segue.destinationViewController as? GameView {
             gameController.selectedQuiz = selectedTitle
         }

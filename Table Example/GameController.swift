@@ -24,7 +24,11 @@ class GameView: UIViewController {
     
     var isAnswerCorrect = false //boolean to determine if the correct answer was selected
     
-    var count = 0;
+    var total = 0 //number of right answers got
+    
+    var questionNum = 1 //num of questions answered
+    
+    var answer = "" //current answer
 
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -35,7 +39,7 @@ class GameView: UIViewController {
     @IBAction func ansOneSelect(sender: AnyObject) {
         if currentQuiz[5] == "1" {
             isAnswerCorrect = true
-            count++
+            total++
             print("Correct!")
             
         }
@@ -60,7 +64,7 @@ class GameView: UIViewController {
     @IBAction func ansTwoSelect(sender: AnyObject) {
         if currentQuiz[5] == "2" {
             isAnswerCorrect = true
-            count++
+            total++
             print("Correct!")
         }
         
@@ -82,7 +86,7 @@ class GameView: UIViewController {
     @IBAction func ansThreeSelected(sender: AnyObject) {
         if currentQuiz[5] == "3" {
             isAnswerCorrect = true
-            count++
+            total++
             print("Correct!")
         }
         
@@ -106,7 +110,7 @@ class GameView: UIViewController {
     @IBAction func ansFourSelected(sender: AnyObject) {
         if currentQuiz[5] == "4" {
             isAnswerCorrect = true
-            count++
+            total++
             print("Correct!")
 
         }
@@ -176,17 +180,53 @@ class GameView: UIViewController {
             
         }
         
+        let index = Int(currentQuiz[5])!
+        answer = currentQuiz[index]
+        
     }
     
     @IBOutlet weak var submitButton: UIButton!
     
     @IBAction func submitSelected(sender: AnyObject) {
-        
-        
-        
-        
-        
+
         print("submit")
+    }
+    
+    
+    func setQuestionsAnswered(num : Int) {
+        
+        questionNum = num
+    }
+    
+    func resetButtonSelected(num : Int) {
+        buttonSelected = 0
+    }
+    
+    func resetAnswerCorrect(current: Bool) {
+        isAnswerCorrect = current
+    }
+    
+    func resetAnswer(str : String) {
+        answer = str
+    }
+    
+    func resetQuiz(typeQuiz :[String]){
+        currentQuiz = typeQuiz
+    }
+    
+    //prepares for segue (Main)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let answerController = segue.destinationViewController as? AnswerController {
+            answerController.selectedAnswer(isAnswerCorrect)
+            answerController.currentQuestion(currentQuiz[0])
+            answerController.corrAnswer(answer)
+            answerController.questionsAnswered(questionNum)
+            answerController.score(total)
+            answerController.numberOfQuestions(10)
+            answerController.quiz(currentQuiz)
+
+        }
+        
     }
 
     

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A51E8B331BF2A6A7002B8CC0 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E8B321BF2A6A7002B8CC0 /* GameController.swift */; };
+		A51E8B351BF2ECAB002B8CC0 /* AnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E8B341BF2ECAB002B8CC0 /* AnswerController.swift */; };
+		A51E8B371BF31C68002B8CC0 /* FinalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E8B361BF31C68002B8CC0 /* FinalController.swift */; };
+		A51E8B391BF31E8D002B8CC0 /* pusheenpizza.png in Resources */ = {isa = PBXBuildFile; fileRef = A51E8B381BF31E8D002B8CC0 /* pusheenpizza.png */; };
 		A55704911BE74C5900B4731D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55704901BE74C5900B4731D /* AppDelegate.swift */; };
 		A55704931BE74C5900B4731D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55704921BE74C5900B4731D /* ViewController.swift */; };
 		A55704961BE74C5900B4731D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55704941BE74C5900B4731D /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		A51E8B321BF2A6A7002B8CC0 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		A51E8B341BF2ECAB002B8CC0 /* AnswerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerController.swift; sourceTree = "<group>"; };
+		A51E8B361BF31C68002B8CC0 /* FinalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalController.swift; sourceTree = "<group>"; };
+		A51E8B381BF31E8D002B8CC0 /* pusheenpizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pusheenpizza.png; sourceTree = "<group>"; };
 		A557048D1BE74C5900B4731D /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55704901BE74C5900B4731D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55704921BE74C5900B4731D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +115,11 @@
 				A55704921BE74C5900B4731D /* ViewController.swift */,
 				A51E8B321BF2A6A7002B8CC0 /* GameController.swift */,
 				A55704941BE74C5900B4731D /* Main.storyboard */,
+				A51E8B361BF31C68002B8CC0 /* FinalController.swift */,
+				A51E8B341BF2ECAB002B8CC0 /* AnswerController.swift */,
 				A55704971BE74C5900B4731D /* Assets.xcassets */,
 				A55704991BE74C5900B4731D /* LaunchScreen.storyboard */,
+				A51E8B381BF31E8D002B8CC0 /* pusheenpizza.png */,
 				A55705001BE7655100B4731D /* science.png */,
 				A55704FE1BE7650300B4731D /* superhero.png */,
 				A55704FC1BE764A100B4731D /* calc.png */,
@@ -250,6 +259,7 @@
 				A55704FF1BE7650300B4731D /* superhero.png in Resources */,
 				A55705011BE7655100B4731D /* science.png in Resources */,
 				A55704981BE74C5900B4731D /* Assets.xcassets in Resources */,
+				A51E8B391BF31E8D002B8CC0 /* pusheenpizza.png in Resources */,
 				A55704961BE74C5900B4731D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55704931BE74C5900B4731D /* ViewController.swift in Sources */,
+				A51E8B351BF2ECAB002B8CC0 /* AnswerController.swift in Sources */,
 				A51E8B331BF2A6A7002B8CC0 /* GameController.swift in Sources */,
+				A51E8B371BF31C68002B8CC0 /* FinalController.swift in Sources */,
 				A55704911BE74C5900B4731D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
