@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Quizes-->
@@ -65,11 +66,114 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="n5L-Gd-kIr" id="MoO-hL-b5d"/>
+                        <segue destination="9Gy-cm-ypq" kind="show" identifier="GameSegue" id="8dO-F7-y3N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986.5" y="343.5"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="bgP-ij-ADZ">
+            <objects>
+                <viewController id="9Gy-cm-ypq" customClass="GameView" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6jD-XR-0QO"/>
+                        <viewControllerLayoutGuide type="bottom" id="VLZ-lm-GeL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aUU-b0-bBf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJr-SS-z3K">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQ8-rM-iHc">
+                                <rect key="frame" x="20" y="229" width="280" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.85770474139999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Answer 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ansTwoSelect:" destination="9Gy-cm-ypq" eventType="touchUpInside" id="FB2-n5-uQz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-TS-BzU">
+                                <rect key="frame" x="20" y="300" width="280" height="52"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.85770474139999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Answer 3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ansThreeSelected:" destination="9Gy-cm-ypq" eventType="touchUpInside" id="0eR-pM-cyh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4E-ik-ZCB">
+                                <rect key="frame" x="20" y="373" width="280" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.85770474139999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Answer 4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ansFourSelected:" destination="9Gy-cm-ypq" eventType="touchUpInside" id="76v-01-2dv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8o-Dd-6l7">
+                                <rect key="frame" x="20" y="458" width="280" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.857704758644104" green="0.55208231967643084" blue="0.30312703690192055" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitSelected:" destination="9Gy-cm-ypq" eventType="touchUpInside" id="cCx-4O-aLo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUD-2r-hZe">
+                                <rect key="frame" x="20" y="156" width="280" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.85770474139999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Peo-QU-7jh"/>
+                                </constraints>
+                                <state key="normal" title="Answer 1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ansOneSelect:" destination="9Gy-cm-ypq" eventType="touchUpInside" id="3Hu-yU-yIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WJr-SS-z3K" firstAttribute="top" secondItem="6jD-XR-0QO" secondAttribute="bottom" constant="8" id="A4Y-SQ-D5r"/>
+                            <constraint firstItem="vUD-2r-hZe" firstAttribute="top" secondItem="WJr-SS-z3K" secondAttribute="bottom" constant="31" id="BSf-n1-KqF"/>
+                            <constraint firstItem="WJr-SS-z3K" firstAttribute="trailing" secondItem="aUU-b0-bBf" secondAttribute="trailingMargin" id="FYW-td-Nzp"/>
+                            <constraint firstItem="WJr-SS-z3K" firstAttribute="leading" secondItem="aUU-b0-bBf" secondAttribute="leadingMargin" id="cuW-5B-A6T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="ESd-98-DA0"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ansFourButton" destination="Y4E-ik-ZCB" id="s1Z-Ql-Tl1"/>
+                        <outlet property="ansOneButton" destination="vUD-2r-hZe" id="1W5-fv-rIV"/>
+                        <outlet property="ansThreeButton" destination="9Ah-TS-BzU" id="iGd-eN-JiS"/>
+                        <outlet property="ansTwoButton" destination="pQ8-rM-iHc" id="Th7-MH-eJ5"/>
+                        <outlet property="questionLabel" destination="WJr-SS-z3K" id="kge-gc-eYQ"/>
+                        <outlet property="submitButton" destination="a8o-Dd-6l7" id="Mje-Qw-FiT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfh-Jv-FaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tza-SX-9B3">
